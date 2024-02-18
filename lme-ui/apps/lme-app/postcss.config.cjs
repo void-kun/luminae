@@ -1,0 +1,1 @@
+module.exports = require("@lme-ui/tailwind-config/postcss.config.cjs")
