@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --recursive --parallel --stream run dev",
-    "build": "pnpm --recursive --parallel --stream run build",
-    "preview:app": "cd ./apps/lme-app/ && pnpm run build && pnpm run preview"
+    "build:shared-ui": "pnpm --filter shared-ui run build",
+    "build:lme-app": "pnpm --filter lme-app run build",
+    "build:lme-admin": "pnpm --filter lme-admin run build",
+    "build": "pnpm run build:shared-ui && pnpm run build:lme-app && pnpm run build:lme-admin",
+    "preview:app": "pnpm --filter lme-app run preview"
   },
   "keywords": [],
   "author": "",
