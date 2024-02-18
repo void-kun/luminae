@@ -10,15 +10,14 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
   },
+  "exclude": ["node_modules"],
   "references": [
     {
       "path": "apps/lme-app"
     },
-    // {
-    //   "path": "apps/lme-admin"
-    // },
     {
       "path": "packages/shared-ui"
     }
