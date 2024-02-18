@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "pnpm --filter @lme-ui/lme-app",
-    "admin": "pnpm --filter @lme-ui/lme-admin",
-    "sharedui": "pnpm --filter @lme-ui/shared-ui",
+    "app": "pnpm --filter lme-app",
+    "admin": "pnpm --filter lme-admin",
+    "sharedui": "pnpm --filter shared-ui",
     "dev": "pnpm --recursive --parallel --stream run dev"
   },
   "keywords": [],

@@ -1,5 +1,5 @@
 {
-  "name": "@lme-ui/shared-ui",
+  "name": "shared-ui",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -16,13 +16,13 @@
     "vue": "^3.2.47"
   },
   "bundledDependencies": [
-    "@lme-ui/tailwind-config"
+    "tailwind-config"
   ],
   "peerDependencies": {
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@lme-ui/tailwind-config": "workspace:*",
+    "tailwind-config": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.1",
     "typescript": "^5.0.4",
     "vite": "^4.3.3",
