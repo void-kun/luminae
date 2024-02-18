@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "pnpm --filter lme-app",
-    "admin": "pnpm --filter lme-admin",
-    "sharedui": "pnpm --filter shared-ui",
-    "dev": "pnpm --recursive --parallel --stream run dev"
+    "dev": "pnpm --recursive --parallel --stream run dev",
+    "build": "pnpm --recursive --parallel --stream run build",
+    "preview:app": "cd ./apps/lme-app/ && pnpm run build && pnpm run preview"
   },
   "keywords": [],
   "author": "",

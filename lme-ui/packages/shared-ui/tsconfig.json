@@ -1,12 +1,13 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "moduleResolution": "node",
+    "declaration": true,
     "composite": true,
     "paths": {
-      "@shared-ui/*": ["./src/components/*"],
-      "@shared-ui/layout/*": ["./src/layout/*"],
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
