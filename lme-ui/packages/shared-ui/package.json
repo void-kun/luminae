@@ -13,8 +13,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue": "^3.2.47",
-    "vuetify": "^3.5.4"
+    "primevue": "^3.48.1",
+    "vue": "^3.2.47"
   },
   "bundledDependencies": [
     "@lme/tailwind-config"
@@ -23,6 +23,7 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.19",
     "@lme/tailwind-config": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.1",
     "typescript": "^5.0.4",

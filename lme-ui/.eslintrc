@@ -32,6 +32,7 @@
     "import/named": "off",
     "import/no-duplicates": "error",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "no-restricted-imports": ["error"]
   }
 }

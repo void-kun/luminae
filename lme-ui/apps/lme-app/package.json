@@ -11,9 +11,9 @@
   "dependencies": {
     "@lme/shared-ui": "workspace:*",
     "@lme/tailwind-config": "workspace:*",
+    "primevue": "^3.48.1",
     "vue": "^3.2.47",
-    "vue-router": "^4.2.5",
-    "vuetify": "^3.5.4"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.1",

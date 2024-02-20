@@ -1,5 +1,5 @@
 <template>
-  <v-btn-primary>{{ title }}</v-btn-primary>
+  <button>{{ title }}</button>
 </template>
 
 <script setup lang="ts">
