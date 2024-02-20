@@ -1,10 +1,11 @@
 {
-  "name": "shared-ui",
+  "name": "@lme/shared-ui",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "module": "./dist/shared-ui.js",
   "types": "./dist/main.d.ts",
+  "main": "./src/main.ts",
   "files": [
     "dist"
   ],
@@ -16,13 +17,13 @@
     "vue": "^3.2.47"
   },
   "bundledDependencies": [
-    "tailwind-config"
+    "@lme/tailwind-config"
   ],
   "peerDependencies": {
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "tailwind-config": "workspace:*",
+    "@lme/tailwind-config": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.1",
     "typescript": "^5.0.4",
     "vite": "^4.3.3",

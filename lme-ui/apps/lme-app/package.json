@@ -1,5 +1,5 @@
 {
-  "name": "lme-app",
+  "name": "@lme/app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "shared-ui": "workspace:*",
-    "tailwind-config": "workspace:*",
+    "@lme/shared-ui": "workspace:*",
+    "@lme/tailwind-config": "workspace:*",
     "vue": "^3.2.47",
     "vue-router": "^4.2.5"
   },

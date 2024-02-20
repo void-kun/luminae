@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseButton } from 'shared-ui';
+import { BaseButton } from '@lme/shared-ui';
 
 const getLogoImage = (url: string): string => {
   return new URL(url, import.meta.url).href;

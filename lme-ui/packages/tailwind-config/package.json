@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-config",
+  "name": "@lme/tailwind-config",
   "private": true,
   "version": "1.0.0",
   "dependencies": {
