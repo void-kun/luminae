@@ -3,9 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "module": "./dist/shared-ui.js",
-  "types": "./dist/main.d.ts",
-  "main": "./src/main.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./src/index.ts",
   "files": [
     "dist"
   ],
@@ -14,7 +13,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vuetify": "^3.5.4"
   },
   "bundledDependencies": [
     "@lme/tailwind-config"

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      vuetify:
+        specifier: ^3.5.4
+        version: 3.5.4(typescript@4.9.5)(vue@3.4.19)
     devDependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.53.0
@@ -53,6 +57,9 @@ importers:
       vue-router:
         specifier: ^4.2.5
         version: 4.2.5(vue@3.4.19)
+      vuetify:
+        specifier: ^3.5.4
+        version: 3.5.4(typescript@5.3.3)(vue@3.4.19)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.2.1
@@ -69,6 +76,9 @@ importers:
       vue:
         specifier: ^3.2.47
         version: 3.4.19(typescript@5.3.3)
+      vuetify:
+        specifier: ^3.5.4
+        version: 3.5.4(typescript@5.3.3)(vue@3.4.19)
     devDependencies:
       '@lme/tailwind-config':
         specifier: workspace:*
@@ -2956,7 +2966,6 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /typescript@5.3.3:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
@@ -3111,6 +3120,22 @@ packages:
       typescript: 5.3.3
     dev: true
 
+  /vue@3.4.19(typescript@4.9.5):
+    resolution: {integrity: sha512-W/7Fc9KUkajFU8dBeDluM4sRGc/aa4YJnOYck8dkjgZoXtVsn3OeTGni66FV1l3+nvPA7VBFYtPioaGKUmEADw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/compiler-dom': 3.4.19
+      '@vue/compiler-sfc': 3.4.19
+      '@vue/runtime-dom': 3.4.19
+      '@vue/server-renderer': 3.4.19(vue@3.4.19)
+      '@vue/shared': 3.4.19
+      typescript: 4.9.5
+    dev: false
+
   /vue@3.4.19(typescript@5.3.3):
     resolution: {integrity: sha512-W/7Fc9KUkajFU8dBeDluM4sRGc/aa4YJnOYck8dkjgZoXtVsn3OeTGni66FV1l3+nvPA7VBFYtPioaGKUmEADw==}
     peerDependencies:
@@ -3125,6 +3150,52 @@ packages:
       '@vue/server-renderer': 3.4.19(vue@3.4.19)
       '@vue/shared': 3.4.19
       typescript: 5.3.3
+
+  /vuetify@3.5.4(typescript@4.9.5)(vue@3.4.19):
+    resolution: {integrity: sha512-fHgfWMI7+z/UtbVPOezX+O1MNBOOMBW9HnKejcBIyQQ7jFRnTHbDQmbINf25FK0wrg/zkjfzyOmWWREKW39eXg==}
+    engines: {node: ^12.20 || >=14.13}
+    peerDependencies:
+      typescript: '>=4.7'
+      vite-plugin-vuetify: '>=1.0.0-alpha.12'
+      vue: ^3.3.0
+      vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: '>=2.0.0-alpha.11'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vite-plugin-vuetify:
+        optional: true
+      vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+    dependencies:
+      typescript: 4.9.5
+      vue: 3.4.19(typescript@4.9.5)
+    dev: false
+
+  /vuetify@3.5.4(typescript@5.3.3)(vue@3.4.19):
+    resolution: {integrity: sha512-fHgfWMI7+z/UtbVPOezX+O1MNBOOMBW9HnKejcBIyQQ7jFRnTHbDQmbINf25FK0wrg/zkjfzyOmWWREKW39eXg==}
+    engines: {node: ^12.20 || >=14.13}
+    peerDependencies:
+      typescript: '>=4.7'
+      vite-plugin-vuetify: '>=1.0.0-alpha.12'
+      vue: ^3.3.0
+      vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: '>=2.0.0-alpha.11'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vite-plugin-vuetify:
+        optional: true
+      vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+    dependencies:
+      typescript: 5.3.3
+      vue: 3.4.19(typescript@5.3.3)
+    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

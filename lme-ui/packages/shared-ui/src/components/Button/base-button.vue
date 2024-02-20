@@ -1,8 +1,5 @@
 <template>
-  <div class="bg-slate-500 rounded-lg">
-    <button @click="onClick">{{ title }}</button>
-    <span>Hello</span>
-  </div>
+  <v-btn-primary>{{ title }}</v-btn-primary>
 </template>
 
 <script setup lang="ts">
