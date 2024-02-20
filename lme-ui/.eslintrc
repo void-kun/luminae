@@ -10,7 +10,7 @@
       "files": "*.vue",
       "parser": "vue-eslint-parser",
       "extends": ["plugin:vue/vue3-recommended", "eslint:recommended", "plugin:import/recommended", "prettier"],
-      "plugins": ["vue", "@typescript-eslint", "simple-import-sort"],
+      "plugins": ["vue", "@typescript-eslint"],
       "rules": {
         "import/named": "off"
       }
@@ -18,21 +18,28 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
     "ecmaVersion": "latest",
     "sourceType": "module",
     "extraFileExtensions": [".vue"],
     "parser": "@typescript-eslint/parser"
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
     "import/first": "error",
     "import/named": "off",
     "import/no-duplicates": "error",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/no-unused-vars": ["error"],
     "no-restricted-imports": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".vue"]
+      },
+      "alias": {
+        "@": "src"
+      }
+    }
   }
 }

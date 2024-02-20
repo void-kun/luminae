@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex">landing vue</div>
+  <div class="flex">not found</div>
 </template>
