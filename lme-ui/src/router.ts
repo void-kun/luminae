@@ -1,6 +1,6 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
-import AppLayout from '@/layouts/app-layout.vue'
-import HomeView from '@/views/home-view.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
+import HomeView from '@/views/HomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: '/details',
-        component: () => import('@/views/detail-view.vue'),
+        component: () => import('@/views/DetailView.vue'),
       },
     ],
   },
