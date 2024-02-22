@@ -12,6 +12,22 @@ const routes: Array<RouteRecordRaw> = [
         component: HomeView,
       },
       {
+        path: '/about',
+        component: () => import('@/views/DetailView.vue'),
+      },
+      {
+        path: '/blog',
+        component: () => import('@/views/DetailView.vue'),
+      },
+      {
+        path: '/contact',
+        component: () => import('@/views/DetailView.vue'),
+      },
+      {
+        path: '/support',
+        component: () => import('@/views/DetailView.vue'),
+      },
+      {
         path: '/details',
         component: () => import('@/views/DetailView.vue'),
       },
